@@ -1,0 +1,62 @@
+.formControl {
+  position: relative;
+}
+
+label {
+  margin-bottom: 4px;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.input {
+  width: 100%;
+
+  input {
+    height: 48px;
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333F48;
+  }
+
+  fieldset {
+    border: 1px solid #E2E2E2;
+  }
+
+  &.error {
+    input {
+      background: #E2E2E2;
+      border-radius: 8px;
+    }
+
+    fieldset {
+      border: 1px solid #ECF1FF;
+    }
+  }
+
+  :global(.MuiInputBase-formControl):hover {
+    fieldset {
+      border-color: #E2E2E2;
+      transition: 0.3s;
+    }
+  }
+
+  :global(.Mui-disabled) {
+    fieldset {
+      border-color: #E2E2E2 !important;
+    }
+
+    input {
+      color: #9199A3 !important;
+    }
+  }
+}
+
+.errorText {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF5196;
+}
+
